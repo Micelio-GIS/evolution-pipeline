@@ -41,7 +41,8 @@ flowchart
 ```
 ## 3. Estudios de valoración masiva y Avalúos de referencia
 
-Para esta parte Plantamos varios flujos, sin embargo consideramos que debemos aclarar algunas presiciones del negocio, dado que 
+Para esta parte Plantamos varios flujos, sin embargo consideramos que debemos aclarar algunas presiciones del negocio, dado que queremos conocer si se deben sacar las Zonas Homogeneas Fisicas y Geoeconomicas de cero, o hay insumos de partida. En caso de que no tomariamos el siguiente flujo para sacar las zonas, y posteriormente los avaluos:
+
 ```mermaid
 flowchart
 
