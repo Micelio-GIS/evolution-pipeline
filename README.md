@@ -3,7 +3,7 @@ Pipeline propuesto para la optimización de los procesos de gestión predial del
 
 ## 1. Microservicio de Extracción de viviendas con teledetección:
 
-Planteamos un microservicio qure reciba como insumo impágenes de la zona de interes, y por medio de un modelo entrenado reconozca las viviendas y retorne un shape de las mismas, el cual ademas de vectorizar la informacion permitira su discriminación y cuantificación, este insumo permitira concoer un valor aproximado de las unidades sociales, y su presicion dependera del insumo:
+Planteamos desarrollar un microservicio que reciba como insumo imágenes de la zona de interés y, mediante un modelo previamente entrenado, identifique las viviendas y genere un archivo shapefile con sus geometrías. Este proceso permitirá vectorizar la información, así como facilitar la discriminación y cuantificación de las unidades identificadas. El resultado sera un Shapefile, para estimar de manera aproximada la cantidad de unidades sociales presentes en la zona de interés, y la precisión de los resultados dependerá de la calidad, resolución y actualidad de las imágenes utilizadas.
 
 ```mermaid
 flowchart LR
@@ -23,7 +23,7 @@ flowchart LR
 
 ## 2. Aplicación de Análisis masivo de titulos
 
-Planteemos una aplicación en la nube que integre un pipeline automatizado para la consulta, descarga y organización de información en carpetas, así como la generación y gestión de documentos, optimizando el flujo de trabajo y centralizando los procesos en una única plataforma.
+Planteamos desarrollar una aplicación en la nube que integre un pipeline automatizado para la consulta, descarga y organización de información en carpetas, así como la generación y gestión de documentos, optimizando el flujo de trabajo y centralizando los procesos en una única plataforma.
 
 
 ```mermaid
@@ -41,7 +41,9 @@ flowchart
 ```
 ## 3. Estudios de valoración masiva y Avalúos de referencia
 
-Para esta parte Plantamos varios flujos, sin embargo consideramos que debemos aclarar algunas presiciones del negocio, dado que queremos conocer si se deben sacar las Zonas Homogeneas Fisicas y Geoeconomicas de cero, o hay insumos de partida. En caso de que no tomariamos el siguiente flujo para sacar las zonas, y posteriormente los avaluos:
+Para esta etapa, tenemos pensados varios flujos de trabajo. Sin embargo, consideramos necesario aclarar algunas precisiones del negocio, ya que queremos determinar si las Zonas Homogéneas Físicas y Geoeconómicas (ZHF y ZHG) deben generarse desde cero o si existen insumos previos que puedan utilizarse como punto de partida.
+
+En caso de que no existan dichos insumos, proponemos tomar el siguiente flujo de trabajo como punto de partida para desarrollar un pipeline automatizado, siguiendo el enfoque planteado en los puntos 1 y 2. Sin embargo, nos gustaría tener una reunión para aclarar estos aspectos y precisar los requerimientos del negocio.
 
 ```mermaid
 flowchart
